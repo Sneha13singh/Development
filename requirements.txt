@@ -1,0 +1,5 @@
+psycopg[binary]
+pytest
+playwright
+requests
+python-dotenv

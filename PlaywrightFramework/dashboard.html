@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1 id="welcome-message">Welcome, Sneha!</h1>
+    <button id="profile-btn">Go to Profile</button>
+    <button id="logout-btn">Logout</button>
+
+    <script>
+        document
+            .getElementById('profile-btn')
+            .addEventListener('click', function() {
+                window.location.href = 'profile.html';
+            });
+
+        document
+            .getElementById('logout-btn')
+            .addEventListener('click', function() {
+                window.location.href = 'login.html';
+            });
+    </script>
+</body>
+</html>
