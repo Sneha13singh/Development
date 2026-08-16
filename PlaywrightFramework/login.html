@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <input type="text" id="username" placeholder="Username"><br><br>
+    <input type="password" id="password" placeholder="Password"><br><br>
+    <button id="login-btn">Login</button>
+
+    <h2 id="message"></h2>
+    <script>
+        document
+            .getElementById('login-btn')
+            .addEventListener('click', function() {
+                let username = document.getElementById('username').value.trim().toLowerCase();
+                let password = document.getElementById('password').value.trim().toLowerCase();
+
+                if (username === 'sneha' && password === 'password123') {
+                    document.getElementById('message').innerText = 'Login successful!';
+                    window.location.href = 'dashboard.html';
+                } else {
+                    document.getElementById('message').textContent = 'Invalid username or password.';
+                }
+            });
+    </script>
+</body>
+</html>
