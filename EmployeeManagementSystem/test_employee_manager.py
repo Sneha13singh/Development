@@ -11,7 +11,7 @@ def employee():
 def employee_manager():
     manager=EmployeeManager()
     employee1=Employee(
-        102, "Akshit", 80000
+        102, "Akshay", 80000
     )
 
     employee2=Employee(
@@ -30,7 +30,7 @@ def test_employee_exists(employee_manager):
 
 def test_find_employee(employee_manager):
     employee = employee_manager.find_employee(102)
-    assert employee.name == "Akshit"
+    assert employee.name == "Akshay"
     assert employee.salary == 80000
 
 def test_update_salary(employee_manager):
